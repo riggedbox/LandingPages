@@ -17,26 +17,42 @@
 
    /* preloader
     * -------------------------------------------------- */
-    const ssPreloader = function() {
+   const ssPreloader = function() {
 
         const siteBody = document.querySelector('body');
         const preloader = document.querySelector('#preloader');
         if (!preloader) return;
 
         html.classList.add('ss-preload');
-        
-        window.addEventListener('load', function() {
+
+        const revealPage = function() {
             html.classList.remove('ss-preload');
             html.classList.add('ss-loaded');
+            siteBody.classList.add('ss-show');
+
+            window.setTimeout(function() {
+                preloader.style.display = 'none';
+            }, 700);
+        };
+        
+        window.addEventListener('load', function() {
+            revealPage();
 
             preloader.addEventListener('transitionend', function afterTransition(e) {
                 if (e.target.matches('#preloader'))  {
-                    siteBody.classList.add('ss-show');
                     e.target.style.display = 'none';
                     preloader.removeEventListener(e.type, afterTransition);
                 }
             });
         });
+
+        if (document.readyState !== 'loading') {
+            window.setTimeout(revealPage, 300);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                window.setTimeout(revealPage, 300);
+            }, { once: true });
+        }
 
         // window.addEventListener('beforeunload' , function() {
         //     siteBody.classList.remove('ss-show');
