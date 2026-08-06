@@ -3788,6 +3788,11 @@ img.u-pull-left {
 @media screen and (max-width: 500px) {
     .s-intro__content-title {
         --text-multiplier : .48;
+        max-width        : 100%;
+        width            : auto;
+        white-space      : normal;
+        overflow-wrap    : break-word;
+        word-break       : break-word;
     }
 
     .s-intro__social {
@@ -3807,10 +3812,18 @@ img.u-pull-left {
     .s-intro__content-title {
         --text-multiplier : .42;
         padding-right     : 0;
+        max-width        : 100%;
+        width            : auto;
+        white-space      : normal;
+        overflow-wrap    : break-word;
+        word-break       : break-word;
     }
 
     .s-intro__content-buttons {
         --btn-height : var(--vspace-1_5);
+        flex-wrap    : wrap;
+        justify-content: flex-start;
+        gap          : var(--vspace-0_75);
     }
 
     .s-intro__content-btn {
