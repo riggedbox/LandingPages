@@ -59,8 +59,8 @@ if (heroSection) {
             });
 
             model.scale.set(0.95, 0.95, 0.95);
-            model.position.set(0, -0.75, 0);
-            model.rotation.y = Math.PI * 0.45;
+            model.position.set(0, -0.4, 0);
+            model.rotation.y = Math.PI * 0.05;
             scene.add(model);
 
             const box = new THREE.Box3().setFromObject(model);
@@ -94,8 +94,8 @@ if (heroSection) {
 
         if (model) {
             model.rotation.y += delta * 0.18;
-            model.position.x = mouse.x * 0.08;
-            model.position.y = -0.18 + mouse.y * 0.06;
+            //model.position.x = mouse.x * 0.08;
+            //model.position.y = -0.18 + mouse.y * 0.06;
         }
 
         renderer.render(scene, camera);
