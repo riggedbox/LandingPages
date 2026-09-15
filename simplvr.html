@@ -782,10 +782,20 @@
         width: fit-content;
         max-width: 100%;
         margin-top: 34px;
+        padding: 14px 18px;
         color: var(--accent);
-        font-size: clamp(21px, 3vw, 36px);
+        border: 1px solid rgba(158, 217, 220, 0.55);
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 800;
         line-height: 1.1;
-        word-break: break-word;
+        text-transform: uppercase;
+        transition: color 180ms ease, background-color 180ms ease;
+      }
+
+      .contact-link:hover {
+        color: var(--charcoal);
+        background: var(--accent);
       }
 
       .location {
@@ -795,30 +805,15 @@
 
       .slide-item {
         opacity: 0;
-        filter: blur(10px);
-        clip-path: inset(12% 0 12% 0 round 8px);
-        transform: translate3d(0, var(--slide-y, 54px), 0) scale(0.985);
+        transform: translate3d(0, 28px, 0);
         transition:
-          opacity 840ms ease,
-          filter 840ms ease,
-          clip-path 840ms ease,
-          transform 920ms cubic-bezier(0.16, 1, 0.3, 1);
-        will-change: opacity, transform;
-      }
-
-      body[data-scroll-dir="up"] .slide-item {
-        --slide-y: -54px;
-      }
-
-      body[data-scroll-dir="down"] .slide-item {
-        --slide-y: 54px;
+          opacity 460ms ease,
+          transform 520ms cubic-bezier(0.16, 1, 0.3, 1);
       }
 
       .slide-item.is-visible {
         opacity: 1;
-        filter: blur(0);
-        clip-path: inset(0 0 0 0 round 0);
-        transform: translate3d(0, 0, 0) scale(1);
+        transform: translate3d(0, 0, 0);
       }
 
       @keyframes scanLine {
@@ -901,6 +896,11 @@
       }
 
       @media (max-width: 620px) {
+        .topbar {
+          backdrop-filter: none;
+          background: rgba(245, 245, 242, 0.98);
+        }
+
         .section-panel {
           padding: 34px 18px;
         }
@@ -949,7 +949,7 @@
         }
 
         .contact-link {
-          font-size: 21px;
+          font-size: 12px;
         }
       }
 
@@ -974,11 +974,11 @@
           <span>SIMPLVR</span>
         </a>
         <nav class="nav-links" aria-label="Navigasi utama">
-          <a href="#platform">Platform</a>
-          <a href="#sla">SLA</a>
-          <a href="#team">Team</a>
-          <a href="#demo">Demo</a>
-          <a href="#contact">Contact</a>
+          <a href="#platform" data-i18n="navPlatform">Platform</a>
+          <a href="#sla" data-i18n="navSla">SLA</a>
+          <a href="#team" data-i18n="navTeam">Team</a>
+          <a href="#demo" data-i18n="navDemo">Demo</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
         <div class="topbar-tools">
           <div class="lang-toggle" aria-label="Language toggle">
@@ -1043,7 +1043,7 @@
             <article class="stage-card slide-item">
               <span class="stage-number">( 01 )</span>
               <div class="stage-thumb">
-                <img src="simplvr/images/photopack/floorplan_pedro-miranda-3QzMBrvCeyQ-unsplash.jpg" alt="Project consultation">
+                <img src="simplvr/images/photopack/floorplan_pedro-miranda-3QzMBrvCeyQ-unsplash.jpg" alt="Project consultation" loading="lazy" decoding="async">
               </div>
               <div>
                 <h3 class="stage-title" data-i18n="stageOneTitle">Project Consultation</h3>
@@ -1054,7 +1054,7 @@
             <article class="stage-card slide-item">
               <span class="stage-number">( 02 )</span>
               <div class="stage-thumb">
-                <img src="simplvr/images/photopack/tim-stief-dH6IjhWHNQQ-unsplash.jpg" alt="Design development">
+                <img src="simplvr/images/photopack/tim-stief-dH6IjhWHNQQ-unsplash.jpg" alt="Design development" loading="lazy" decoding="async">
               </div>
               <div>
                 <h3 class="stage-title" data-i18n="stageTwoTitle">Design Development</h3>
@@ -1065,7 +1065,7 @@
             <article class="stage-card slide-item">
               <span class="stage-number">( 03 )</span>
               <div class="stage-thumb">
-                <img src="simplvr/images/photopack/howard-bouchevereau-042Srn0-82o-unsplash.jpg" alt="AR preview">
+                <img src="simplvr/images/photopack/howard-bouchevereau-042Srn0-82o-unsplash.jpg" alt="AR preview" loading="lazy" decoding="async">
               </div>
               <div>
                 <h3 class="stage-title" data-i18n="stageThreeTitle">AR Preview</h3>
@@ -1076,7 +1076,7 @@
             <article class="stage-card slide-item">
               <span class="stage-number">( 04 )</span>
               <div class="stage-thumb">
-                <img src="simplvr/images/photopack/anders-jilden-Sc5RKXLBjGg-unsplash.jpg" alt="Project handover">
+                <img src="simplvr/images/photopack/anders-jilden-Sc5RKXLBjGg-unsplash.jpg" alt="Project handover" loading="lazy" decoding="async">
               </div>
               <div>
                 <h3 class="stage-title" data-i18n="stageFourTitle">Sales Handover</h3>
@@ -1135,7 +1135,7 @@
           </div>
           <div class="team-frame">
             <article class="profile-card slide-item">
-              <img src="simplvr/images/profiles/Satriyo-profile.webp" alt="Satriyo Aji Nugroho">
+              <img src="simplvr/images/profiles/Satriyo-profile.webp" alt="Satriyo Aji Nugroho" loading="lazy" decoding="async">
               <div>
                 <span class="profile-meta">Co-Founder & CEO</span>
                 <h3>Satriyo Aji Nugroho</h3>
@@ -1144,7 +1144,7 @@
               </div>
             </article>
             <article class="profile-card slide-item">
-              <img src="simplvr/images/profiles/Aref-profile.webp" alt="Arif Setiawan Tamzil">
+              <img src="simplvr/images/profiles/Aref-profile.webp" alt="Arif Setiawan Tamzil" loading="lazy" decoding="async">
               <div>
                 <span class="profile-meta">CMO</span>
                 <h3>Arif Setiawan Tamzil</h3>
@@ -1168,6 +1168,7 @@
               src="https://www.youtube.com/embed/2KV3-Z5BzQI?autoplay=1&mute=1&loop=1&playlist=2KV3-Z5BzQI&playsinline=1&rel=0&modestbranding=1"
               title="SIMPLVR demo video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              loading="lazy"
               allowfullscreen
             ></iframe>
           </div>
@@ -1175,7 +1176,7 @@
 
         <section class="contact section-panel" id="contact">
           <div class="contact-image slide-item">
-            <img src="simplvr/images/photopack/anders-jilden-Sc5RKXLBjGg-unsplash.jpg" alt="Detail arsitektur gedung modern">
+            <img src="simplvr/images/photopack/anders-jilden-Sc5RKXLBjGg-unsplash.jpg" alt="Detail arsitektur gedung modern" loading="lazy" decoding="async">
           </div>
           <div class="contact-copy slide-item">
             <p class="eyebrow" data-i18n="contactEyebrow">Highlight contact</p>
@@ -1183,7 +1184,7 @@
             <p data-i18n="contactText">
               For developers, agencies, and sales teams that want to sell units through visualization, not just brochures.
             </p>
-            <a class="contact-link" href="mailto:riggedboxsoftworks@gmail.com">riggedboxsoftworks@gmail.com</a>
+            <a class="contact-link" href="mailto:riggedboxsoftworks@gmail.com" data-i18n="contactCta">Start Chat</a>
             <span class="location">Rigged Box Softworks - Surakarta, Indonesia</span>
           </div>
         </section>
@@ -1192,17 +1193,52 @@
 
     <script>
       (function () {
-        const body = document.body;
-        let lastScroll = window.scrollY;
-        body.dataset.scrollDir = "down";
+        const translations = {
+          en: {
+            navPlatform: "Platform", navSla: "SLA", navTeam: "Team", navDemo: "Demo", navContact: "Contact", navCta: "Start SLA",
+            heroEyebrow: "White-label sales tool for property teams",
+            heroText: "An SLA platform for property companies: help buyers see, customize, and understand units before they are built.",
+            heroDemo: "Watch Demo", heroExplore: "Explore Platform", statOne: "modular home market", statTwo: "faster time-to-offer with AR", statThree: "rural units unlocked by policy", heroCaption: "Future of property selling with SIMPLVR",
+            statementA: "A modern real estate SLA platform, SIMPLVR incorporates", statementB: "pre-sale visualization", statementC: "mixed reality previews", statementD: "commerce-ready furniture upsells",
+            stagesEyebrow: "Visual SLA workflow", stagesTitle: "Stages", stagesText: "Inspired by architectural project decks: each sales step becomes a clean, stacked card that moves into place as buyers scroll.",
+            stageOneTitle: "Project Consultation", stageOneText: "Map the unit, buyer needs, SLA scope, and sales story before entering the visualization flow.", stageTwoTitle: "Design Development", stageTwoText: "Turn floor plans into configurable layouts, finishes, furniture packs, and branded sales views.", stageThreeTitle: "AR Preview", stageThreeText: "Let buyers inspect rooms at real scale, compare options, and share decisions with the sales team.", stageFourTitle: "Sales Handover", stageFourText: "Package the chosen layout, interior bundle, and buyer-ready summary into one polished closing asset.", learnMore: "Learn More",
+            slaEyebrow: "For developer sales teams", slaTitle: "A sharper SLA layer for property sales velocity.", slaText: "SIMPLVR turns slow property presentations into an interactive decision room: branded visuals, live configuration, and buyer-ready outputs in one flow.", slaSignalOne: "Visual decision path", slaSignalTwo: "Live buyer options", slaSignalThree: "Closing assets",
+            metricOneTitle: "Pre-sale", metricOneText: "Tour units before production or handover.", metricTwoTitle: "Live Customization", metricTwoText: "Switch finishes, layouts, and furniture during consultation.", metricThreeTitle: "Upsell", metricThreeText: "Bring furniture and interior packages into the closing flow.",
+            teamTitle: "Creatives Team", teamText: "The SIMPLVR team combines engineering, game acceleration, digital strategy, and growth marketing to bring visual selling into property workflows.", demoEyebrow: "Tech demo", demoTitle: "Design your dream space - like playing a game.", demoText: "See how SIMPLVR brings scan, design, AR preview, and sales visualization into one workflow for property teams.", contactEyebrow: "Highlight contact", contactTitle: "Build your property SLA with SIMPLVR.", contactText: "For developers, agencies, and sales teams that want to sell units through visualization, not just brochures.", contactCta: "Start Chat"
+          },
+          id: {
+            navPlatform: "Platform", navSla: "SLA", navTeam: "Tim", navDemo: "Demo", navContact: "Kontak", navCta: "Mulai SLA",
+            heroEyebrow: "Alat penjualan white-label untuk tim properti", heroText: "Platform SLA untuk perusahaan properti: bantu calon pembeli melihat, menyesuaikan, dan memahami unit sebelum dibangun.", heroDemo: "Lihat Demo", heroExplore: "Jelajahi Platform", statOne: "pasar rumah modular", statTwo: "lebih cepat membuat penawaran dengan AR", statThree: "unit pedesaan terbuka lewat kebijakan", heroCaption: "Masa depan penjualan properti bersama SIMPLVR",
+            statementA: "Platform SLA real estate modern, SIMPLVR menghadirkan", statementB: "visualisasi pra-penjualan", statementC: "pratinjau mixed reality", statementD: "upsell furnitur siap commerce",
+            stagesEyebrow: "Alur kerja SLA visual", stagesTitle: "Tahapan", stagesText: "Terinspirasi dari presentasi proyek arsitektur: setiap langkah penjualan menjadi kartu bertumpuk yang tersusun saat calon pembeli menggulir halaman.",
+            stageOneTitle: "Konsultasi Proyek", stageOneText: "Petakan unit, kebutuhan pembeli, cakupan SLA, dan cerita penjualan sebelum masuk ke alur visualisasi.", stageTwoTitle: "Pengembangan Desain", stageTwoText: "Ubah denah menjadi tata letak, finishing, paket furnitur, dan tampilan penjualan bermerek yang dapat dikonfigurasi.", stageThreeTitle: "Pratinjau AR", stageThreeText: "Biarkan pembeli memeriksa ruang dalam skala nyata, membandingkan pilihan, dan berbagi keputusan dengan tim penjualan.", stageFourTitle: "Serah Terima Penjualan", stageFourText: "Rangkum tata letak, paket interior, dan ringkasan siap pembeli menjadi satu aset penutupan yang rapi.", learnMore: "Pelajari Selengkapnya",
+            slaEyebrow: "Untuk tim penjualan developer", slaTitle: "Lapisan SLA yang lebih tajam untuk mempercepat penjualan properti.", slaText: "SIMPLVR mengubah presentasi properti yang lambat menjadi ruang keputusan interaktif: visual bermerek, konfigurasi langsung, dan output siap pembeli dalam satu alur.", slaSignalOne: "Jalur keputusan visual", slaSignalTwo: "Pilihan pembeli langsung", slaSignalThree: "Aset penutupan",
+            metricOneTitle: "Pra-penjualan", metricOneText: "Tampilkan unit sebelum produksi atau serah terima.", metricTwoTitle: "Kustomisasi Langsung", metricTwoText: "Ganti finishing, tata letak, dan furnitur saat konsultasi.", metricThreeTitle: "Upsell", metricThreeText: "Hadirkan furnitur dan paket interior ke dalam alur penutupan.",
+            teamTitle: "Tim Kreatif", teamText: "Tim SIMPLVR menggabungkan engineering, pengembangan game, strategi digital, dan growth marketing untuk menghadirkan penjualan visual ke alur kerja properti.", demoEyebrow: "Demo teknologi", demoTitle: "Rancang ruang impian seperti sedang bermain game.", demoText: "Lihat bagaimana SIMPLVR menggabungkan pemindaian, desain, pratinjau AR, dan visualisasi penjualan dalam satu alur untuk tim properti.", contactEyebrow: "Kontak utama", contactTitle: "Bangun SLA properti Anda bersama SIMPLVR.", contactText: "Untuk developer, agensi, dan tim penjualan yang ingin menjual unit melalui visualisasi, bukan hanya brosur.", contactCta: "Mulai Percakapan"
+          }
+        };
+
+        const languageButtons = document.querySelectorAll("[data-lang]");
+        const translatedElements = document.querySelectorAll("[data-i18n]");
+
+        function setLanguage(language) {
+          translatedElements.forEach((element) => {
+            const translation = translations[language][element.dataset.i18n];
+            if (translation) element.textContent = translation;
+          });
+          languageButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.lang === language));
+          document.documentElement.lang = language === "id" ? "id" : "en";
+        }
+
+        languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
+        setLanguage("en");
 
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add("is-visible");
-              } else if (Math.abs(entry.boundingClientRect.top) > window.innerHeight * 1.2) {
-                entry.target.classList.remove("is-visible");
+                observer.unobserve(entry.target);
               }
             });
           },
@@ -1214,17 +1250,6 @@
 
         document.querySelectorAll(".slide-item").forEach((item) => observer.observe(item));
 
-        window.addEventListener(
-          "scroll",
-          () => {
-            const current = window.scrollY;
-            if (Math.abs(current - lastScroll) > 6) {
-              body.dataset.scrollDir = current > lastScroll ? "down" : "up";
-              lastScroll = current;
-            }
-          },
-          { passive: true }
-        );
       })();
     </script>
   </body>
