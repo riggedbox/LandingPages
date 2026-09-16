@@ -1,9 +1,9 @@
-const cacheName = "Rigged Box Softworks-ProjectSimCity-0.1";
+const cacheName = "Rigged Box Softworks-Project Sim City-0.12";
 const contentToCache = [
-    "Build/Webgl Build.loader.js",
-    "Build/Webgl Build.framework.js",
-    "Build/Webgl Build.data",
-    "Build/Webgl Build.wasm",
+    "Build/Build 0.12.loader.js",
+    "Build/Build 0.12.framework.js",
+    "Build/Build 0.12.data",
+    "Build/Build 0.12.wasm",
     "TemplateData/style.css"
 
 ];
