@@ -1,0 +1,77 @@
+﻿{
+    "nav":  [
+                "Features",
+                "How it works",
+                "Privacy",
+                "Start a conversation"
+            ],
+    "language":  {
+                     "switchToEnglish":  "Switch to English",
+                     "switchToIndonesian":  "Switch to Indonesian"
+                 },
+    "home":  {
+                 ".hero .eyebrow":  "Local-first digital signage",
+                 ".hero h1":  "Your content. \u003cem\u003eYour screen.\u003c/em\u003e",
+                 ".hero .lead":  "Display Reels, videos, photos, and carousels from your Instagram Professional Account on a digital screen that is always ready to attract attention.",
+                 ".actions .button":  "Start a conversation \u003cspan aria-hidden=\"true\"\u003eâ†—\u003c/span\u003e",
+                 ".actions .text-link":  "See how it works \u003cspan aria-hidden=\"true\"\u003eâ†“\u003c/span\u003e",
+                 ".showcase .eyebrow":  "Made for display",
+                 ".showcase h2":  "Your Instagram,\u003cbr\u003e\u003cem\u003ebigger.\u003c/em\u003e",
+                 ".showcase-copy p":  "The content you already have, arranged into a polished visual experience for stores, studios, offices, lobbies, or events.",
+                 ".showcase-copy .text-link":  "See product capabilities \u003cspan aria-hidden=\"true\"\u003eâ†˜\u003c/span\u003e",
+                 ".feature-intro .eyebrow":  "What matters, clearly visible",
+                 "#features-title":  "Official source.\u003cbr\u003eNeat playlists.\u003cbr\u003e\u003cem\u003eLocal-first.\u003c/em\u003e",
+                 ".feature-main h3":  "Instagram Graph API",
+                 ".feature-main p":  "Media is loaded through the official source from a connected Instagram Professional Accountâ€”not through scraping.",
+                 ".feature-main .card-note":  "OFFICIAL SOURCE",
+                 ".feature-playlist h3":  "Flexible playlists",
+                 ".feature-playlist p":  "Choose media, arrange the order, then run fullscreen playback on a separate display.",
+                 ".feature-local h3":  "Local-first",
+                 ".feature-local p":  "The access token stays in the local backend and is stored encrypted. The browser never receives it.",
+                 ".workflow-head .eyebrow":  "How it works",
+                 "#workflow-title":  "Connect. Choose. Play.",
+                 ".workflow-head p":  "From the connected account to the fullscreen display, the flow stays simple.",
+                 ".step:nth-child(1) h3":  "Connect",
+                 ".step:nth-child(1) p":  "Instagram Professional Account",
+                 ".step:nth-child(2) h3":  "Choose",
+                 ".step:nth-child(2) p":  "Choose and arrange media",
+                 ".step:nth-child(3) h3":  "Play",
+                 ".step:nth-child(3) p":  "Run fullscreen display",
+                 ".use-cases .eyebrow":  "One flow, many settings",
+                 "#use-title":  "A screen that follows\u003cbr\u003e\u003cem\u003eyour space.\u003c/em\u003e",
+                 ".security-copy .eyebrow":  "Privacy by design",
+                 "#security-title":  "Content moves.\u003cbr\u003e\u003cem\u003eTokens stay safe.\u003c/em\u003e",
+                 ".security-copy p":  "Access tokens are never sent to the browser. The local-first architecture keeps credentials in the local backend in encrypted form.",
+                 ".final-cta .eyebrow":  "Ready to display",
+                 "#cta-title":  "Letâ€™s make your screen\u003cbr\u003e\u003cem\u003emore alive.\u003c/em\u003e",
+                 ".final-cta p":  "For product support and questions, start a conversation with us through WhatsApp.",
+                 ".final-cta .button":  "Start a conversation \u003cspan aria-hidden=\"true\"\u003eâ†—\u003c/span\u003e"
+             },
+    "legal":  {
+                  "privacy-policy.html":  {
+                                              "title":  "Privacy Policy",
+                                              "eyebrow":  "Legal document",
+                                              "updated":  "Effective: October 5, 2026 Â· Last updated: October 5, 2026"
+                                          },
+                  "terms-of-service.html":  {
+                                                "title":  "Terms of Service",
+                                                "eyebrow":  "Legal document",
+                                                "updated":  "Effective: October 5, 2026"
+                                            },
+                  "data-deletion-instructions.html":  {
+                                                          "title":  "Data Deletion Instructions",
+                                                          "eyebrow":  "User rights",
+                                                          "updated":  "Last updated: October 5, 2026",
+                                                          "headings":  [
+                                                                           "Delete from the app",
+                                                                           "Submit a request by email",
+                                                                           "What we will delete",
+                                                                           "Processing time"
+                                                                       ]
+                                                      }
+              },
+    "footer":  {
+                   "copyright":  "© 2026 Reels Player. Instagram is a trademark of Meta Platforms, Inc.",
+                   "home":  "Home"
+               }
+}

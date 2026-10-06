@@ -1,0 +1,77 @@
+﻿{
+    "nav":  [
+                "Fitur",
+                "Cara kerja",
+                "Privasi",
+                "Mulai percakapan"
+            ],
+    "language":  {
+                     "switchToEnglish":  "Beralih ke Bahasa Inggris",
+                     "switchToIndonesian":  "Beralih ke Bahasa Indonesia"
+                 },
+    "home":  {
+                 ".hero .eyebrow":  "Local-first digital signage",
+                 ".hero h1":  "Konten Anda. \u003cem\u003eLayar Anda.\u003c/em\u003e",
+                 ".hero .lead":  "Tampilkan Reels, video, foto, dan carousel dari Instagram Professional Account pada layar digital yang selalu siap menarik perhatian.",
+                 ".actions .button":  "Mulai percakapan \u003cspan aria-hidden=\"true\"\u003eâ†—\u003c/span\u003e",
+                 ".actions .text-link":  "Lihat cara kerja \u003cspan aria-hidden=\"true\"\u003eâ†“\u003c/span\u003e",
+                 ".showcase .eyebrow":  "Dibuat untuk display",
+                 ".showcase h2":  "Instagram Anda,\u003cbr\u003e\u003cem\u003etampil lebih besar.\u003c/em\u003e",
+                 ".showcase-copy p":  "Konten yang sudah Anda punya, disusun menjadi pengalaman visual yang rapi untuk toko, studio, kantor, lobby, atau event.",
+                 ".showcase-copy .text-link":  "Lihat kemampuan produk \u003cspan aria-hidden=\"true\"\u003eâ†˜\u003c/span\u003e",
+                 ".feature-intro .eyebrow":  "Yang penting, terlihat jelas",
+                 "#features-title":  "Sumber resmi.\u003cbr\u003ePlaylist rapi.\u003cbr\u003e\u003cem\u003eLocal-first.\u003c/em\u003e",
+                 ".feature-main h3":  "Instagram Graph API",
+                 ".feature-main p":  "Media dimuat melalui sumber resmi dari Instagram Professional Account yang terhubungâ€”bukan dengan scraping.",
+                 ".feature-main .card-note":  "OFFICIAL SOURCE",
+                 ".feature-playlist h3":  "Playlist yang fleksibel",
+                 ".feature-playlist p":  "Pilih media, susun urutan, lalu jalankan playback fullscreen pada display terpisah.",
+                 ".feature-local h3":  "Local-first",
+                 ".feature-local p":  "Access token tetap di backend lokal dan disimpan terenkripsi. Browser tidak menerimanya.",
+                 ".workflow-head .eyebrow":  "Cara kerja",
+                 "#workflow-title":  "Hubungkan. Pilih. Putar.",
+                 ".workflow-head p":  "Dari akun yang terhubung sampai layar fullscreen, alurnya tetap sederhana.",
+                 ".step:nth-child(1) h3":  "Hubungkan",
+                 ".step:nth-child(1) p":  "Instagram Professional Account",
+                 ".step:nth-child(2) h3":  "Pilih",
+                 ".step:nth-child(2) p":  "Pilih dan susun media",
+                 ".step:nth-child(3) h3":  "Putar",
+                 ".step:nth-child(3) p":  "Jalankan fullscreen display",
+                 ".use-cases .eyebrow":  "Satu alur, banyak suasana",
+                 "#use-title":  "Layar yang mengikuti\u003cbr\u003e\u003cem\u003eruang Anda.\u003c/em\u003e",
+                 ".security-copy .eyebrow":  "Privasi by design",
+                 "#security-title":  "Konten bergerak.\u003cbr\u003e\u003cem\u003eToken tetap aman.\u003c/em\u003e",
+                 ".security-copy p":  "Access token tidak dikirim ke browser. Arsitektur local-first menjaga credential tetap berada di backend lokal dan tersimpan dalam bentuk terenkripsi.",
+                 ".final-cta .eyebrow":  "Siap ditampilkan",
+                 "#cta-title":  "Mari buat layar Anda\u003cbr\u003e\u003cem\u003elebih hidup.\u003c/em\u003e",
+                 ".final-cta p":  "Untuk dukungan dan pertanyaan produk, mulai percakapan dengan kami melalui WhatsApp.",
+                 ".final-cta .button":  "Mulai percakapan \u003cspan aria-hidden=\"true\"\u003eâ†—\u003c/span\u003e"
+             },
+    "legal":  {
+                  "privacy-policy.html":  {
+                                              "title":  "Kebijakan Privasi",
+                                              "eyebrow":  "Dokumen legal",
+                                              "updated":  "Berlaku mulai: 5 Oktober 2026 Â· Terakhir diperbarui: 5 Oktober 2026"
+                                          },
+                  "terms-of-service.html":  {
+                                                "title":  "Ketentuan Layanan",
+                                                "eyebrow":  "Dokumen legal",
+                                                "updated":  "Berlaku mulai: 5 Oktober 2026"
+                                            },
+                  "data-deletion-instructions.html":  {
+                                                          "title":  "Instruksi Penghapusan Data",
+                                                          "eyebrow":  "Hak pengguna",
+                                                          "updated":  "Terakhir diperbarui: 5 Oktober 2026",
+                                                          "headings":  [
+                                                                           "Hapus dari aplikasi",
+                                                                           "Ajukan permintaan melalui email",
+                                                                           "Apa yang akan kami hapus",
+                                                                           "Waktu penyelesaian"
+                                                                       ]
+                                                      }
+              },
+    "footer":  {
+                   "copyright":  "© 2026 Reels Player. Instagram adalah merek Meta Platforms, Inc.",
+                   "home":  "Kembali ke beranda"
+               }
+}
